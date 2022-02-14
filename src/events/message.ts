@@ -67,7 +67,7 @@ export const onMessage = async (message: Message): Promise<void> => {
 
     const aboutButton = new MessageButton()
       .setCustomId("about")
-      .setLabel("What is Moonjelly’s Vision for the Ocean and the Planet?")
+      .setLabel("What is Moonjelly’s Vision for the Ocean and the Planet TEST?")
       .setStyle("PRIMARY");
 
     const wgButton = new MessageButton()
