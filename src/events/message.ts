@@ -60,19 +60,19 @@ export const onMessage = async (message: Message): Promise<void> => {
     message.author.id === "558192816308617227"
   ) {
     const embed = new MessageEmbed();
-    embed.setTitle("Welcome to the TEC!");
+    embed.setTitle("Welcome to the moonjellyDAO!");
     embed.setDescription(
-      "Hello there! This channel provides a general overview about the TEC, click on the buttons below to start your journey into our community."
+      "Thank you for jumping in! You’re on the way to join a community with the mission to reinvent the way we fund, create and measure ocean impact. We are facing an important and challenging journey, but if anyone can do it it’s us… and you! \n\n Continue these next steps to become a part of Moonjelly | The DAO for the Ocean. We are forever grateful for your participation! "
     );
 
     const aboutButton = new MessageButton()
       .setCustomId("about")
-      .setLabel("What is the TEC?")
+      .setLabel("What is Moonjelly’s Vision for the Ocean and the Planet?")
       .setStyle("PRIMARY");
 
     const wgButton = new MessageButton()
       .setCustomId("wg")
-      .setLabel("How is the TEC organised?")
+      .setLabel("How is Moonjelly Organised?")
       .setStyle("PRIMARY");
 
     /*
@@ -84,12 +84,12 @@ export const onMessage = async (message: Message): Promise<void> => {
 
     const proposalButton = new MessageButton()
       .setCustomId("proposal")
-      .setLabel("How to make a proposal?")
+      .setLabel("How do I contribute to Moonjelly?")
       .setStyle("PRIMARY");
 
     const praiseButton = new MessageButton()
       .setCustomId("praise")
-      .setLabel("What is Praise?")
+      .setLabel("What is the current stage of development along the roadmap?")
       .setStyle("PRIMARY");
 
     const buttonsA = new MessageActionRow().addComponents(
@@ -104,7 +104,7 @@ export const onMessage = async (message: Message): Promise<void> => {
     const buttonsC = new MessageActionRow().addComponents(
       new MessageButton()
         .setCustomId("contribute")
-        .setLabel("I want to contribute to the TEC!")
+        .setLabel("I want to contribute to the moonjellyDAO!")
         .setStyle("SUCCESS")
     );
     await message.channel.send({

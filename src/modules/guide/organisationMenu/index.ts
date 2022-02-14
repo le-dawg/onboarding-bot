@@ -14,7 +14,7 @@ export const organisationMenu = async (
   try {
     const message = (await interaction.editReply({
       content:
-        "The Token Engineering Commons is comprised of 11 Working Groups that collaborate to promote our Vision which is to advance token engineering through enabling the creation of ethical, safe, resilient and diverse economic systems to benefit societies around the world.\n\nOur Working Groups are: Stewards, SoftGov, Legal, Transparency, Omega, Gravity, Parameters, Comms, Commons Swarm, Labs, Communitas\n\nThe [workgroup website page](https://tecommons.org/workgroups) provides more info and the [TEC calendar](https://calendar.google.com/calendar/u/0/embed?src=5mkep1ad1j860k6g7i7fr8plq0@group.calendar.google.com&ctz=Europe/Berlin) provides the schedule for all WG calls.\nAll calls are open to anyone to join. Hope we see you there!",
+        "The moonjellyDAO ... comprises ... Working Groups that collaborate to promote our Vision which is to advance ... ethical, safe, resilient and diverse economic systems to benefit ... \n\nOur Working Groups are: ... \n\nThe [workgroup website page](https://www.disney.com) provides more info and the [WG calendar](localhost) provides the schedule for all WG calls.\nAll calls are open to anyone to join. Hope we see you there!",
     })) as Message;
 
     const collector = message.createMessageComponentCollector({
